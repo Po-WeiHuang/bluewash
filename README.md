@@ -1,3 +1,10 @@
+*** Introduction
+Detected Bluewashing claims based on UK, EU regulations and proofs from the paper.
+Used all-MiniLM-L6-v2 for evidence retrieval with a Random Forest scoring engine. By applying a soft penalty to absolute marketing language and using SHAP logic to audit the model's internal decision-making. For every claim. OpenAI then converts these data points into a professional regulatory justification
+
+
+*** Running Steps
+
 1. Installing uv
 
 If you are on a Linux/macOS system (like your /home/huangp/ path suggests), run this in your terminal:
