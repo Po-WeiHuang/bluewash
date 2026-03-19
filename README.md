@@ -19,12 +19,15 @@ Restart your terminal after this so the uv command is recognized.
 5. Download dependencies
 `uv pip install -r requirements.txt`
 
-7. 
 6. Add in .env
- * OPENAI_API_KEY
- * REG_DIR: Regulation directory
- * CLAIMS_FILE: the output claim files after running the apo
- * REPORT_FILE
+ * OPENAI_API_KEY: Add your openai api private key 
+ * REG_DIR: Regulation directory (After Llamaparse) (default one is at llamainput/regulation)
+ * CLAIMS_FILE: claim files (shall be acquired after finished 7.)
+ * CLAIMS_SOURCE: the output claim files after running the repo (After Llamaparse) (default one is at llamainput/productinfo )
+ * REPORT_FILE (Report Filename Path)
 
-7. Execute main script
+7. Make claims:
+`python src/openaiapi.py`
+
+8. Execute main script
 `python src/verdict_RF.py`
